@@ -416,7 +416,7 @@ footer .footer-info img {
 }
 
 .punkte-mit-infos .tabs .tablink:hover {
-    text-decoration: underline;
+    color: var(--primary-color);
     cursor: pointer;
 }
 
@@ -425,7 +425,7 @@ footer .footer-info img {
 }
 
 .punkte-mit-infos .tabs .tablink.active {
-    color: var(--primary-color);
+    color: var(--text-blue);
 }
 
 .punkte-mit-infos .tabs .img-headline {
@@ -435,7 +435,7 @@ footer .footer-info img {
     margin-bottom: 15px;
 }
 
-.punkte-mit-infos .tabs .img-headline img {
+.punkte-mit-infos .tabs .img-headline svg {
     width: 30px;
     transform: translateY(5px);
 }
@@ -443,6 +443,21 @@ footer .footer-info img {
 .punkte-mit-infos .tabcontent {
     opacity: 0;
     transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.arrow-path {
+    fill: #9b9b9b; 
+    stroke: #9b9b9b; 
+    stroke-width: 1; 
+}
+/* Hover effect */
+.tablink:hover + .arrow .arrow-path {
+    fill: var(--primary-color); 
+    stroke: var(--primary-color); 
+}
+.tablink.active + .arrow .arrow-path {
+    fill: var(--text-blue); /* Change to the active color */
+    stroke: var(--text-blue);
 }
 
 .punkte-mit-infos .tabcontent.active {

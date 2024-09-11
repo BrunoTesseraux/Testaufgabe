@@ -9,19 +9,27 @@ function openTab(evt, tabName) {
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].classList.remove("active");
-        const arrow = tablinks[i].nextElementSibling;
-        if (arrow) {
-            arrow.src = "./../assets/arrow-grey.svg"; // Reset to grey
-        }
+        // const arrow = tablinks[i].nextElementSibling;
+        // if (arrow) {
+        //     arrow.src = "./../assets/arrow-grey.svg"; // Reset to grey
+        // }
     }
 
     document.getElementById(tabName).classList.add("active");
     evt.currentTarget.classList.add("active");
-    const activeArrow = evt.currentTarget.nextElementSibling;
-    if (activeArrow) {
-        activeArrow.src = "./../assets/arrow-orange.svg"; // Set to orange
-    }
-}const slides = document.querySelector('.slides');
+    // const activeArrow = evt.currentTarget.nextElementSibling;
+    // if (activeArrow) {
+    //     activeArrow.src = "./../assets/arrow-blau.svg"; 
+    // }
+}
+
+window.onload = function() {
+    // Set the first tab as active by default
+    openTab({ currentTarget: document.getElementById('defaultTab') }, 'entwickeln');
+};
+
+
+const slides = document.querySelector('.slides');
 const slideItems = document.querySelectorAll('.slide');
 const dotsContainer = document.querySelector('.dots');
 const prevButton = document.querySelector('.prev');
