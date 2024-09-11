@@ -3,10 +3,8 @@
 Struktur
 
 index.html:             Die Haupt-HTML-Datei der Website.
-style/styles.css:       Das CSS-Stylesheet, das für das Styling der
-                        Website verantwortlich ist.
-scripts/script.js:      Das JavaScript für Interaktivität und Funktionalität (falls
-                        vorhanden).
+style/:       Das CSS-Stylesheet, das für das Styling der Website verantwortlich ist.
+scripts/:      Das JavaScript für Interaktivität und Funktionalität
 assets/:                Enthält alle Bilddateien und SVG-Icons.
 fonts/:                 Beinhaltet die Schriftarten für die Website.
 
