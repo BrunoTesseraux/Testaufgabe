@@ -8,22 +8,22 @@
 </head>
 <body>
     <div class="sidenav">
-        <a href="">FAQ<img src="./../assets/questionmark.svg" alt=""></a>
-        <a href="">Kontakt<img src="./../assets/user.svg" alt=""></a>
-        <a href="">Jobs<img src="./../assets/hands.svg" alt=""></a>
+        <a href="" class="sidenav__link">FAQ<img src="./assets/questionmark.svg" alt=""></a>
+        <a href="" class="sidenav__link">Kontakt<img src="./assets/user.svg" alt=""></a>
+        <a href="" class="sidenav__link">Jobs<img src="./assets/hands.svg" alt=""></a>
     </div>
-    <header class="unterseite">
-        <nav>
-            <a href="./../index.html"><img src="./../assets/nike.png" alt="nike-logo"></a>
-            <ul>
-                <li><a class="nav-active" href="">Arbeit</a></li>
-                <li><a href="">Berufsbilder</a></li>
-                <li><a href="">Ausbildung</a></li>
-                <li><a href="">Stellenanzeigen</a></li>
+    <header class="header unterseite">
+        <nav class="header__nav">
+            <a href="./../index.html"><img src="./../assets/nike.png" alt="nike-logo" class="header__logo"></a>
+            <ul class="header__menu">
+                <li class="header__menu-item nav-active"><a href="./unterseite.html">Arbeit</a></li>
+                <li class="header__menu-item"><a href="">Berufsbilder</a></li>
+                <li class="header__menu-item"><a href="">Ausbildung</a></li>
+                <li class="header__menu-item"><a href="">Stellenanzeigen</a></li>
             </ul>
         </nav>
-        <h1><span>Hey,</span><br>so geht Arbeiten</h1>
-        <div class="clipped-image">
+        <h1 class="header__title"><span>Hey,</span><br>so geht Arbeiten</h1>
+        <div class="header__clipped-image">
             <img src="https://images.unsplash.com/photo-1519698363407-c948d65fbc94?q=80&w=3570&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Background Image">
             <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
                 <defs>
@@ -35,20 +35,32 @@
         </div>
     </header>
     <div class="social">
-        <a href=""><img src="./../assets/facebook.svg" alt=""></a>
-        <a href=""><img src="./../assets/youtube.svg" alt=""></a>
-        <a href=""><img src="./../assets/insta.svg" alt=""></a>
-        <a href=""><img src="./../assets/tiktok.svg" alt=""></a>
+        <a href=""><img src="./../assets/facebook.svg" alt="Facebook Icon" class="social__icon"></a>
+        <a href=""><img src="./../assets/youtube.svg" alt="Youtube Icon" class="social__icon"></a>
+        <a href=""><img src="./../assets/insta.svg" alt="Instagram Icon" class="social__icon"></a>
+        <a href=""><img src="./../assets/tiktok.svg" alt="Tiktok Icon class="social__icon"></a>
     </div>
-    <section class="block-mit-hintergrund verlauf-2">
+    <section class="block-mit-hintergrund block-mit-hintergrund--verlauf2">
         <h2>Arbeit mit <br>Menschen - in echt!</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolorem illum aut voluptas eius sequi maiores exercitationem sit, cupiditate iste qui quia laudantium aperiam distinctio quo ipsa culpa nihil doloribus animi ab quod natus numquam fuga? Impedit harum sunt provident blanditiis vero sapiente, nulla aut inventore ducimus numquam cupiditate quod velit nam quam accusantium! A eum natus, sapiente laudantium neque, esse quaerat repellat pariatur ex nam repellendus quae repudiandae hic quo tempora ipsam molestiae earum quas corrupti libero iusto deleniti. Obcaecati et, nostrum numquam, aperiam voluptatibus nisi fugit modi exercitationem, dicta fugiat nulla doloremque iusto sint a dolore necessitatibus itaque!</p>
-        <p class="kleiner-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A veniam iste, dolorem accusantium vel beatae natus expedita aliquam! Molestiae, voluptates. Libero ipsam error deleniti maxime fugiat, maiores dignissimos voluptas magni incidunt, pariatur facere porro, fugit molestiae quis praesentium quibusdam esse!</p>
-        <p class="kleiner-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque numquam quo recusandae accusamus ex! Vero, voluptate. Doloremque inventore beatae necessitatibus.</p>
-        <a href="" class="button inverted"><img src="./../assets/pdf.svg" alt=""> Führungsleitlinien</a>
-        <a href="" class="button inverted"><img src="./../assets/arrow-top-right.svg" alt=""> Mehr Infos</a>
+        <p class="block-mit-hintergrund__kleiner-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A veniam iste, dolorem accusantium vel beatae natus expedita aliquam! Molestiae, voluptates. Libero ipsam error deleniti maxime fugiat, maiores dignissimos voluptas magni incidunt, pariatur facere porro, fugit molestiae quis praesentium quibusdam esse!</p>
+        <p class="block-mit-hintergrund__kleiner-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque numquam quo recusandae accusamus ex! Vero, voluptate. Doloremque inventore beatae necessitatibus.</p>
+        <a href="" class="button inverted">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="#FC0D1B" d="M64 464l48 0 0 48-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 304l-48 0 0-144-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"/>
+            </svg>
+            Führungsleitlinien
+          </a>
+        
+          <a href="" class="button inverted">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="#FC0D1B" d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/>
+            </svg>
+            Mehr Infos
+          </a>
         <img src="" alt="">
     </section>
+
     <section class="punkte-mit-infos">
         <h2>Warum du der <br> richtige bist?</h2>
         <div class="tabs">
@@ -174,17 +186,18 @@
             <p>Wir unterstützen dich in deiner beruflichen und persönlichen Weiterbildung. Egal, ob du dich auf ein neues Fachgebiet spezialisieren oder deine Führungskompetenzen ausbauen möchtest – wir bieten dir die passenden Schulungen und Kurse an. Unser breites Angebot an Weiterbildungsmaßnahmen sorgt dafür, dass du stets neue Impulse erhältst und dich stetig weiterentwickeln kannst. Wir glauben, dass Lernen ein lebenslanger Prozess ist und fördern deine berufliche Entwicklung auf allen Ebenen.</p>
         </div>
     </section>
-    <footer>
-        <div class="grau">
-            <a href="">Impressum</a><a href="">Datenschutz</a>
+    <footer class="footer">
+        <div class="footer__links footer__links--grau">
+            <a href="">Impressum</a>
+            <a href="">Datenschutz</a>
         </div>
-        <div class="footer-info">
-            <h2>Sag hallo! Wir freuen uns auf ein Kennenlernen</h2>
-            <div class="footer-contact">
+        <div class="footer__info">
+            <h2 class="footer__title">Sag hallo! Wir freuen uns auf ein Kennenlernen</h2>
+            <div class="footer__contact">
                 <a href="email">info@nike.de</a>
-                <p>Telefon: <a href="tel:0000000">000-0000</a></p>
+                <a href="tel:0000000">000-0000</a>
             </div>
-            <img src="./../assets/nike.png" alt="">
+            <img src="../assets/nike.png" alt="" class="footer__logo">
         </div>
     </footer>
     <script src="./../scripts/script.js"></script>

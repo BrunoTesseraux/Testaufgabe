@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <title>Testaufgabe Bruno</title>
 </head>
 <body>
     <div class="sidenav">
-        <a href="">FAQ<img src="./assets/questionmark.svg" alt=""></a>
-        <a href="">Kontakt<img src="./assets/user.svg" alt=""></a>
-        <a href="">Jobs<img src="./assets/hands.svg" alt=""></a>
+        <a href="" class="sidenav__link">FAQ<img src="./assets/questionmark.svg" alt=""></a>
+        <a href="" class="sidenav__link">Kontakt<img src="./assets/user.svg" alt=""></a>
+        <a href="" class="sidenav__link">Jobs<img src="./assets/hands.svg" alt=""></a>
     </div>
-    <header>
-        <nav>
-            <a href="./index.html"><img src="./assets/nike.png" alt="nike-logo"></a>
-            <ul>
-                <li><a href="./pages/unterseite.html">Arbeit</a></li>
-                <li><a href="">Berufsbilder</a></li>
-                <li><a href="">Ausbildung</a></li>
-                <li><a href="">Stellenanzeigen</a></li>
+    <header class="header">
+        <nav class="header__nav">
+            <a href="./index.html"><img src="./assets/nike.png" alt="nike-logo" class="header__logo"></a>
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="./pages/unterseite.html">Arbeit</a></li>
+                <li class="header__menu-item"><a href="">Berufsbilder</a></li>
+                <li class="header__menu-item"><a href="">Ausbildung</a></li>
+                <li class="header__menu-item"><a href="">Stellenanzeigen</a></li>
             </ul>
         </nav>
-        <h1><span>Hey,</span><br>Bruno und sw: <br>not so bad!</h1>
-        <div class="clipped-image">
-            <img src="./assets/Portrait.jpg" alt="Background Image">
+        <h1 class="header__title"><span>Hey,</span><br>Bruno und sw: <br>not so bad!</h1>
+        <div class="header__clipped-image">
+            <img src="./assets/Portrait.jpg" alt="Background Image" class="header__image">
             <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
                 <defs>
                     <clipPath id="clip-path">
@@ -35,106 +37,135 @@
         </div>
     </header>
     <div class="social">
-        <a href=""><img src="./assets/facebook.svg" alt=""></a>
-        <a href=""><img src="./assets/youtube.svg" alt=""></a>
-        <a href=""><img src="./assets/insta.svg" alt=""></a>
-        <a href=""><img src="./assets/tiktok.svg" alt=""></a>
+        <a href=""><img src="./assets/facebook.svg" alt="Facebook Icon" class="social__icon"></a>
+        <a href=""><img src="./assets/youtube.svg" alt="YouTube Icon" class="social__icon"></a>
+        <a href=""><img src="./assets/insta.svg" alt="Instagram Icon" class="social__icon"></a>
+        <a href=""><img src="./assets/tiktok.svg" alt="TikTok Icon" class="social__icon"></a>
     </div>
     <section class="text-bunt">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis odit accusantium molestias a quaerat delectus animi? Rerum voluptatum ipsum, impedit officia molestias aspernatur vitae voluptate eos in tempora nulla odio, similique, cum enim ipsam ullam porro quia delectus magni natus perspiciatis. Culpa optio inventore ex ea, neque tempore laboriosam dolorum debitis nesciunt at corrupti! Quae delectus quaerat rem labore minus?</p>
-        <a href="" class="button"><img src="./assets/arrow-white.svg" alt=""> über die Arbeit bei uns</a>
+        <p class="text-bunt__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis odit accusantium molestias a quaerat delectus animi? Rerum voluptatum ipsum, impedit officia molestias aspernatur vitae voluptate eos in tempora nulla odio, similique, cum enim ipsam ullam porro quia delectus magni natus perspiciatis. Culpa optio inventore ex ea, neque tempore laboriosam dolorum debitis nesciunt at corrupti! Quae delectus quaerat rem labore minus?</p>
+        <a href="" class="button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+              <title>Arrow</title>
+              <g id="Right-2" data-name="Right">
+                <polygon 
+                  points="17.5 5.999 16.793 6.706 22.086 11.999 1 11.999 1 12.999 22.086 12.999 16.792 18.294 17.499 19.001 24 12.499 17.5 5.999"
+                  style="fill:#ffffff; stroke:#ffffff; stroke-width:1" />
+              </g>
+            </svg>
+            über die Arbeit bei uns
+          </a>
     </section>
     <section class="berufsfelder">
-        <h2>Unsere Berufsfelder</h2>
-
-        <div class="slider">
-            <div class="slides">
-                <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1713947501966-34897f21162e?q=80&w=3732&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 1">
-                    <div class="overlay"></div>
-                    <div class="container">
-                        <h3>Lorem, ipsum</h3><img src="./assets/arrow-white.svg" alt="">
+        <h2 class="berufsfelder__title">Unsere Berufsfelder</h2>
+    
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1713947501966-34897f21162e?q=80&w=3732&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 1" class="slider__image">
+                    <div class="slider__overlay"></div>
+                    <div class="slider__container">
+                        <h3 class="slider__caption">Lorem, ipsum</h3>
+                        <img src="./assets/arrow-white.svg" alt="" class="slider__arrow">
                     </div>
                 </div>
-                <div class="slide">
-                    <img src="https://plus.unsplash.com/premium_photo-1663091354914-7b4e0b00731e?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 2">
-                    <div class="overlay"></div>
-                    <div class="container">
-                        <h3>Lorem, ipsum</h3><img src="./assets/arrow-white.svg" alt="">
+                <div class="swiper-slide">
+                    <img src="https://plus.unsplash.com/premium_photo-1663091354914-7b4e0b00731e?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 2" class="slider__image">
+                    <div class="slider__overlay"></div>
+                    <div class="slider__container">
+                        <h3 class="slider__caption">Lorem, ipsum</h3>
+                        <img src="./assets/arrow-white.svg" alt="" class="slider__arrow">
                     </div>
                 </div>
-                <div class="slide">
-                    <img src="https://plus.unsplash.com/premium_photo-1663045968450-59a8ec0dffee?q=80&w=3570&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 3">
-                    <div class="overlay"></div>
-                    <div class="container">
-                        <h3>Lorem, ipsum</h3><img src="./assets/arrow-white.svg" alt="">
+                <div class="swiper-slide">
+                    <img src="https://plus.unsplash.com/premium_photo-1663045968450-59a8ec0dffee?q=80&w=3570&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 3" class="slider__image">
+                    <div class="slider__overlay"></div>
+                    <div class="slider__container">
+                        <h3 class="slider__caption">Lorem, ipsum</h3>
+                        <img src="./assets/arrow-white.svg" alt="" class="slider__arrow">
                     </div>
                 </div>
-                <div class="slide">
-                    <img src="https://plus.unsplash.com/premium_photo-1663040310399-28080634fc91?q=80&w=3570&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 4">
-                    <div class="overlay"></div>
-                    <div class="container">
-                        <h3>Lorem, ipsum</h3><img src="./assets/arrow-white.svg" alt="">
+                <div class="swiper-slide">
+                    <img src="https://plus.unsplash.com/premium_photo-1667511053068-6d4c6f77c2f9?q=80&w=3569&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bruno" class="slider__image">
+                    <div class="slider__overlay"></div>
+                    <div class="slider__container">
+                        <h3 class="slider__caption">Lorem, ipsum</h3>
+                        <img src="./assets/arrow-white.svg" alt="" class="slider__arrow">
                     </div>
                 </div>
-                <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1591288431139-6412fb3a6dba?q=80&w=3648&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 4">
-                    <div class="overlay"></div>
-                    <div class="container">
-                        <h3>Lorem, ipsum</h3><img src="./assets/arrow-white.svg" alt="">
+                <div class="swiper-slide">
+                    <img src="https://plus.unsplash.com/premium_photo-1667511053068-6d4c6f77c2f9?q=80&w=3569&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 1" class="slider__image">
+                    <div class="slider__overlay"></div>
+                    <div class="slider__container">
+                        <h3 class="slider__caption">Lorem, ipsum</h3>
+                        <img src="./assets/arrow-white.svg" alt="" class="slider__arrow">
                     </div>
                 </div>
-                <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1553369425-adf38595c94a?q=80&w=3570&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 4">
-                    <div class="overlay"></div>
-                    <div class="container">
-                        <h3>Lorem, ipsum</h3><img src="./assets/arrow-white.svg" alt="">
+                <div class="swiper-slide">
+                    <img src="https://plus.unsplash.com/premium_photo-1664301354759-668502b86bfb?q=80&w=3570&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 1" class="slider__image">
+                    <div class="slider__overlay"></div>
+                    <div class="slider__container">
+                        <h3 class="slider__caption">Lorem, ipsum</h3>
+                        <img src="./assets/arrow-white.svg" alt="" class="slider__arrow">
                     </div>
                 </div>
-                <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1519090846590-90696b6a0af4?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 4">
-                    <div class="overlay"></div>
-                    <div class="container">
-                        <h3>Lorem, ipsum</h3><img src="./assets/arrow-white.svg" alt="">
+                <div class="swiper-slide">
+                    <img src="https://plus.unsplash.com/premium_photo-1667511053068-6d4c6f77c2f9?q=80&w=3569&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 1" class="slider__image">
+                    <div class="slider__overlay"></div>
+                    <div class="slider__container">
+                        <h3 class="slider__caption">Lorem, ipsum</h3>
+                        <img src="./assets/arrow-white.svg" alt="" class="slider__arrow">
                     </div>
                 </div>
-                <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1497470674350-dad852ead0eb?q=80&w=3466&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 4">
-                    <div class="overlay"></div>
-                    <div class="container">
-                        <h3>Lorem, ipsum</h3><img src="./assets/arrow-white.svg" alt="">
+                <div class="swiper-slide">
+                    <img src="https://plus.unsplash.com/premium_photo-1667509361935-ac010db0dc89?q=80&w=3572&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 1" class="slider__image">
+                    <div class="slider__overlay"></div>
+                    <div class="slider__container">
+                        <h3 class="slider__caption">Lorem, ipsum</h3>
+                        <img src="./assets/arrow-white.svg" alt="" class="slider__arrow">
                     </div>
                 </div>
-                <!-- Add more slides as needed -->
+                
             </div>
-            <div class="navigation">
-                <button class="prev">&#10094;</button>
-                <div class="dots">
-                    <!-- Dots will be added dynamically -->
-                </div>
-                <button class="next">&#10095;</button>
-            </div>
+            
+            <!-- Add Pagination and Navigation Controls -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </section>
-    <section class="block-mit-hintergrund verlauf">
-        <h2>Ausbildung</h2>
-        <p class="schmal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptate praesentium ut delectus tenetur perspiciatis aspernatur a veritatis blanditiis, fuga voluptas soluta ipsam, pariatur non. Neque tenetur, sed veniam facere repellendus sunt? Culpa labore perferendis repudiandae accusantium, repellat harum mollitia!</p>
-        <a href="" class="button inverted"><img src="./assets/arrow-orange.svg" alt=""> Mehr Infos über die Ausbildung</a>
-        <img class="menschen" src="./assets/menschen.png" alt="">
+    <section class="block-mit-hintergrund block-mit-hintergrund--verlauf">
+        <h2 class="block-mit-hintergrund__title">Ausbildung</h2>
+        <p class="block-mit-hintergrund__text block-mit-hintergrund__text--schmal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptate praesentium ut delectus tenetur perspiciatis aspernatur a veritatis blanditiis, fuga voluptas soluta ipsam, pariatur non. Neque tenetur, sed veniam facere repellendus sunt? Culpa labore perferendis repudiandae accusantium, repellat harum mollitia!</p>
+        <a href="" class="button button--inverted">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+              <title>Arrow</title>
+              <g id="Right-2" data-name="Right">
+                <polygon 
+                  points="17.5 5.999 16.793 6.706 22.086 11.999 1 11.999 1 12.999 22.086 12.999 16.792 18.294 17.499 19.001 24 12.499 17.5 5.999"
+                  style="fill:#FC0D1B; stroke:#FC0D1B; stroke-width:1" />
+              </g>
+            </svg>
+            Mehr Infos über die Ausbildung
+          </a>
+        <img class="block-mit-hintergrund__image" src="./assets/menschen.png" alt="">
     </section>
-    <footer>
-        <div class="grau">
-            <a href="">Impressum</a><a href="">Datenschutz</a>
+    <footer class="footer">
+        <div class="footer__links footer__links--grau">
+            <a href="">Impressum</a>
+            <a href="">Datenschutz</a>
         </div>
-        <div class="footer-info">
-            <h2>Sag hallo! Wir freuen uns auf ein Kennenlernen</h2>
-            <div class="footer-contact">
+        <div class="footer__info">
+            <h2 class="footer__title">Sag hallo! Wir freuen uns auf ein Kennenlernen</h2>
+            <div class="footer__contact">
                 <a href="email">info@nike.de</a>
                 <a href="tel:0000000">000-0000</a>
             </div>
-            <img src="./assets/nike.png" alt="">
+            <img src="./assets/nike.png" alt="" class="footer__logo">
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./scripts/script.js"></script>
 </body>
 </html>
