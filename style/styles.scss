@@ -173,7 +173,7 @@ header {
     .header__clipped-image {
         position: absolute;
         width: 50%;
-        right: 0;
+        right: -120px;
         top: 250px;
         z-index: 9;
         img {
@@ -539,7 +539,7 @@ footer {
         top: 60%;
     }
     header{
-        height: 100vh;
+        min-height: 100vh;
         overflow: hidden;
         position: relative;
         &.unterseite{
